@@ -20,9 +20,9 @@
             <field name="model">project.project</field>
             <field name="inherit_id" ref="project.edit_project"/>
             <field name="arch" type="xml">
-                <p position="after">
+                <field name="partner_id" position="after">
                     <field name="project_tag_ids" widget="many2many_tags"/>
-                </p>
+                </field>
             </field>
         </record>
 
@@ -35,7 +35,7 @@
                 <field name="doc_count" position="after">
                     <field name="project_tag_ids"/>
                 </field>
-                <div class="oe_kanban_project_avatars" position="after">
+                <div class="o_kanban_primary_left" position="after">
                     <div class="oe_kanban_footer_left" style="margin-top:5px;">
                         <field name="project_tag_ids"/>
                     </div>
